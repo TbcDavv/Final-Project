@@ -36,8 +36,11 @@ header nav ul .center li a {
     text-decoration: none;
 }
 
-header nav ul .center li:nth-child(2) a {
+header nav ul .center a {
     padding: 0px 20px;
+}
+header nav ul .center .active{
+    padding: 0px;
 }
 
 header nav ul .right {
@@ -158,4 +161,36 @@ main .card .left p {
 main .card .right {
     color: #E5E5E5;
     font-size: 150px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    font-size: 17px;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+footer .main h3 {
+    font-size: 26px;
+    padding: 26px 0px;
+}
+footer h4{
+    padding: 22px 0px;
+}
+footer .main p {
+    color: #99999A;
+}
+
+footer .main h4 {
+    font-size: 21px;
+}
+
+footer p,
+footer i {
+    color: #5968F4;
+    margin-right: 10px;
+    margin-bottom: 20px;
 }
