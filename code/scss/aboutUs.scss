@@ -1,43 +1,125 @@
+$color_1: #2c3e50;
+$color_2: #2980b9;
+
 .about-us {
-    padding: 80px 20px;
-  
-    .container {
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-  
-    .section-title {
-      text-align: center;
-      font-size: 2.8em;
-      margin-bottom: 60px;
-      color: #2c3e50;
-      letter-spacing: 1.5px;
-    }
-  }
-  
-  .about-content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-  
-  .about-text {
-    flex: 1 1 50%;
-    font-size: 1.2em;
-    color: #2c3e50;
-    line-height: 1.8;
-  
-    h2 {
-      font-size: 2.2em;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      color: #2980b9;
-      letter-spacing: 1px;
-    }
-  
-    p {
-      margin-top: 20px;
-      margin-bottom: 20px;
-    }
-  }
-  
+	padding: 80px 20px;
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	.section-title {
+		text-align: center;
+		font-size: 2.8em;
+		margin-bottom: 60px;
+		color: $color_1;
+		letter-spacing: 1.5px;
+	}
+}
+.about-content {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 50px;
+}
+.about-text {
+	flex: 1 1 50%;
+	font-size: 1.2em;
+	color: $color_1;
+	line-height: 1.8;
+	h2 {
+		font-size: 2.2em;
+		margin-top: 40px;
+		margin-bottom: 20px;
+		color: $color_2;
+		letter-spacing: 1px;
+	}
+	p {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 992px) {
+	header {
+		nav {
+			ul {
+				flex-direction: column;
+				text-align: center;
+				.center {
+					flex-direction: column;
+					gap: 10px;
+					li {
+						margin-bottom: 10px;
+					}
+				}
+				.right {
+					flex-direction: column;
+					gap: 10px;
+					li {
+						margin-bottom: 10px;
+					}
+				}
+				.left {
+					img {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.about-content {
+		flex-direction: column;
+		text-align: center;
+	}
+	.about-text {
+		flex: 1 1 100%;
+	}
+	footer {
+		display: flex;
+		flex-wrap: wrap;
+		text-align: center;
+		.main {
+			flex: 1 1 100%;
+			margin-bottom: 20px;
+		}
+		div {
+			flex: 1 1 100%;
+			margin-bottom: 20px;
+		}
+		h3 {
+			font-size: 1.5em;
+		}
+		h4 {
+			font-size: 1.5em;
+		}
+	}
+}
+@media (max-width: 480px) {
+	.about-us {
+		padding: 40px 10px;
+		.section-title {
+			font-size: 2em;
+			margin-bottom: 40px;
+		}
+	}
+	.about-text {
+		h2 {
+			font-size: 1.8em;
+		}
+		p {
+			font-size: 1em;
+		}
+	}
+	footer {
+		.main {
+			p {
+				font-size: 0.9em;
+			}
+		}
+		div {
+			p {
+				font-size: 0.9em;
+			}
+		}
+	}
+}

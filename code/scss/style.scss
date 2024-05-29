@@ -1,196 +1,327 @@
+$color_1: black;
+$color_2: white;
+$color_3: gray;
+$color_4: #e5e5e5;
+$color_5: #99999a;
+$color_6: #5968f4;
+$font-family_1: "Montserrat", sans-serif;
+$background-color_1: #1d3a28;
+$background-color_2: black;
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "Montserrat", sans-serif;
-  }
-  
-  header nav {
-    width: 90%;
-    margin: auto;
-  
-    ul {
-      margin-top: 10px;
-      display: flex;
-      justify-content: space-between;
-  
-      li {
-        list-style: none;
-      }
-  
-      .left a img {
-        width: 60px;
-      }
-  
-      .center {
-        display: flex;
-        margin-top: 10px;
-  
-        li a {
-          font-size: 20px;
-          color: black;
-          text-decoration: none;
-        }
-  
-        a {
-          padding: 0px 20px;
-        }
-  
-        .active {
-          padding: 0px;
-        }
-      }
-  
-      .right {
-        display: flex;
-        margin-top: 12px;
-  
-        li {
-          a {
-            font-size: 22px;
-            color: black;
-            padding-right: 10px;
-          }
-  
-          &:last-child a {
-            padding: 0px;
-          }
-        }
-      }
-  
-      .center li .active {
-        padding-bottom: 2px;
-        border-bottom: 4px solid #6ACB68;
-      }
-    }
-  }
-    
-  .landing {
-    background-image: url(../img/banner.jpg);
-    height: 600px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    section {
-      background-color: #1D3A28;
-      width: 40%;
-      height: 600px;
-      border-top-right-radius: 10%;
-  
-      .content {
-        width: 80%;
-        margin: auto;
-        padding-top: 180px;
-        color: white;
-  
-        h1 {
-          font-size: 38px;
-          padding-bottom: 20px;
-        }
-  
-        p {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-  
-  main .card {
-    width: 90%;
-    margin: auto;
-    padding-bottom: 100px;
-  
-    .flex {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 50px;
-    }
-  
-    .image {
-      width: 1700px;
-      height: 300px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-  
-    .first {
-      background-image: url('../img/1.jpg');
-    }
-  
-    .second {
-      background-image: url('../img/2.jpg');
-    }
-  
-    .third {
-      background-image: url('../img/3.jpg');
-    }
-  
-    .forth {
-      background-image: url('../img/4.jpg');
-    }
-  
-    .fifth {
-      background-image: url('../img/5.jpg');
-    }
-  
-    .sixth {
-      background-image: url('../img/6.jpg');
-    }
-  
-    .left {
-      width: 70%;
-  
-      h2 {
-        font-size: 50px;
-        padding: 50px 0px;
-        color: black;
-      }
-  
-      p {
-        color: gray;
-        width: 80%;
-      }
-    }
-  
-    .right {
-      color: #E5E5E5;
-      font-size: 150px;
-    }
-  }
-  
-  footer {
-    display: flex;
-    justify-content: space-around;
-    background-color: black;
-    color: white;
-    font-size: 17px;
-    padding-top: 25px;
-    padding-bottom: 50px;
-  
-    .main h3 {
-      font-size: 26px;
-      padding: 26px 0px;
-    }
-  
-    h4 {
-      padding: 22px 0px;
-    }
-  
-    .main {
-      p {
-        color: #99999A;
-      }
-  
-      h4 {
-        font-size: 21px;
-      }
-    }
-  
-    p, i {
-      color: #5968F4;
-      margin-right: 10px;
-      margin-bottom: 20px;
-    }
-  }
-  
+	margin: 0;
+	padding: 0;
+	font-family: $font-family_1;
+}
+header {
+	nav {
+		width: 90%;
+		margin: auto;
+		ul {
+			margin-top: 10px;
+			display: flex;
+			justify-content: space-between;
+			li {
+				list-style: none;
+			}
+			.left {
+				a {
+					img {
+						width: 60px;
+					}
+				}
+			}
+			.center {
+				display: flex;
+				margin-top: 10px;
+				li {
+					a {
+						font-size: 20px;
+						color: $color_1;
+						text-decoration: none;
+					}
+					.active {
+						padding-bottom: 2px;
+						border-bottom: 4px solid #6acb68;
+					}
+				}
+				a {
+					padding: 0px 20px;
+				}
+				.active {
+					padding: 0px;
+				}
+			}
+			.right {
+				display: flex;
+				margin-top: 12px;
+				li {
+					a {
+						font-size: 22px;
+						color: $color_1;
+						padding-right: 10px;
+					}
+					&:last-child {
+						a {
+							padding: 0px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.landing {
+	background-image: url(../img/banner.jpg);
+	height: 600px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	section {
+		background-color: $background-color_1;
+		width: 40%;
+		height: 600px;
+		border-top-right-radius: 10%;
+		.content {
+			width: 80%;
+			margin: auto;
+			padding-top: 180px;
+			color: $color_2;
+			h1 {
+				font-size: 38px;
+				padding-bottom: 20px;
+			}
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}
+main {
+	.card {
+		width: 90%;
+		margin: auto;
+		padding-bottom: 100px;
+		.flex {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 50px;
+		}
+		.image {
+			width: 100%;
+			height: 300px;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		.first {
+			background-image: url('../img/1.jpg');
+		}
+		.second {
+			background-image: url('../img/2.jpg');
+		}
+		.third {
+			background-image: url('../img/3.jpg');
+		}
+		.forth {
+			background-image: url('../img/4.jpg');
+		}
+		.fifth {
+			background-image: url('../img/5.jpg');
+		}
+		.sixth {
+			background-image: url('../img/6.jpg');
+		}
+		.left {
+			width: 70%;
+			h2 {
+				font-size: 50px;
+				padding: 50px 0px;
+				color: $color_1;
+			}
+			p {
+				color: $color_3;
+				width: 80%;
+			}
+		}
+		.right {
+			color: $color_4;
+			font-size: 150px;
+		}
+	}
+}
+footer {
+	display: flex;
+	justify-content: space-around;
+	background-color: $background-color_2;
+	color: $color_2;
+	font-size: 17px;
+	padding-top: 25px;
+	padding-bottom: 50px;
+	.main {
+		h3 {
+			font-size: 26px;
+			padding: 26px 0px;
+		}
+		p {
+			color: $color_5;
+		}
+		h4 {
+			font-size: 21px;
+		}
+	}
+	h4 {
+		padding: 22px 0px;
+	}
+	p {
+		color: $color_6;
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+	i {
+		color: $color_6;
+		margin-right: 10px;
+		margin-bottom: 20px;
+	}
+}
+@media (max-width: 992px) {
+	header {
+		nav {
+			ul {
+				flex-direction: column;
+				align-items: center;
+				.center {
+					margin-top: 10px;
+					flex-direction: column;
+					a {
+						padding: 5px 0;
+					}
+				}
+				.right {
+					margin-top: 10px;
+					flex-direction: column;
+					a {
+						padding: 5px 0;
+					}
+				}
+			}
+		}
+	}
+	main {
+		.card {
+			.flex {
+				flex-direction: column;
+				text-align: center;
+			}
+			.left {
+				width: 100%;
+			}
+			.right {
+				font-size: 120px;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.landing {
+		height: 400px;
+		section {
+			width: 100%;
+			height: 400px;
+			border-top-right-radius: 0;
+			.content {
+				padding-top: 100px;
+				h1 {
+					font-size: 30px;
+				}
+				p {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	main {
+		.card {
+			.left {
+				h2 {
+					font-size: 40px;
+					padding: 30px 0px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+			.right {
+				font-size: 100px;
+			}
+		}
+	}
+}
+@media (max-width: 480px) {
+	header {
+		nav {
+			ul {
+				flex-direction: column;
+				text-align: center;
+				.center {
+					margin-top: 10px;
+					flex-direction: column;
+					li {
+						margin-bottom: 10px;
+					}
+				}
+				.right {
+					margin-top: 10px;
+					flex-direction: column;
+					li {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+	.landing {
+		height: 300px;
+		section {
+			.content {
+				padding-top: 50px;
+				h1 {
+					font-size: 24px;
+				}
+				p {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	main {
+		.card {
+			.left {
+				h2 {
+					font-size: 30px;
+					padding: 20px 0px;
+				}
+				p {
+					width: 100%;
+					font-size: 12px;
+				}
+			}
+			.right {
+				font-size: 80px;
+			}
+		}
+	}
+	footer {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		.main {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		div {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
+}
