@@ -44,6 +44,10 @@
   text-align: center;
 }
 
+.col:nth-child(2) .action-card p {
+  margin-bottom: 43px;
+}
+
 .action-card:hover {
   transform: translateY(-5px);
 }
