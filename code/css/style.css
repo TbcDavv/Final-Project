@@ -53,6 +53,11 @@ header nav ul .right li a {
   padding-right: 10px;
 }
 
+header nav ul .right .tbc {
+  width: 28px;
+  height: 28px;
+}
+
 header nav ul .right li:last-child a {
   padding: 0px;
 }
